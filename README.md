@@ -79,12 +79,11 @@ Hub VNet
  │
  
  └── Spoke VNet – Staging
- 
-       ├── VM
-       
-       ├── NSG
-       
-       └── Route Table
+   ├── VM       
+   
+   ├── NSG
+   
+   └── Route Table
 
 ### Technologies Used
 
