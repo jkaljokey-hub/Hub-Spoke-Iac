@@ -30,7 +30,7 @@ Network Security Groups (NSGs)
 
 Route tables directing traffic through the firewall
 
-# Key Features
+### Key Features
 
 ✔ Fully automated infrastructure deployment using Bicep
 
@@ -48,30 +48,45 @@ Route tables directing traffic through the firewall
 
 ✔ NSG Flow Logs and diagnostic settings
 
-# Architecture Diagram
+### Architecture Diagram
 
 (Add your architecture diagram image here)
 
 Example:
 
 Hub VNet
+
  ├── Azure Firewall
+ 
  ├── Azure Bastion
+ 
  ├── Log Analytics Workspace
+ 
  │
+ 
  ├── VNet Peering
+ 
  │
+ 
  ├── Spoke VNet – Production
+ 
  │     ├── VM
+ 
  │     ├── NSG
+ 
  │     └── Route Table
+ 
  │
+ 
  └── Spoke VNet – Staging
+ 
        ├── VM
+       
        ├── NSG
+       
        └── Route Table
 
-# Technologies Used
+### Technologies Used
 
 Microsoft Azure
 
@@ -87,19 +102,24 @@ Log Analytics
 
 Visual Studio Code
 
-# Deployment
-1 Clone the repository
-git clone https://github.com/jkaljokey-hub/your-repository-name.git
+### Deployment
+1 Clone the repository 
+
+git clone https://github.com/jkaljokey-hub/Hub-Spoke-Iac.git
+
 cd your-repository-name
+
 2 Login to Azure
+
 az login
+
 3 Deploy the infrastructure
 az deployment group create \
 --resource-group bk-group \
 --template-file main.bicep
 Monitoring Configuration
 
-# The deployment enables diagnostics for:
+### The deployment enables diagnostics for:
 
 Azure Firewall logs
 
@@ -111,7 +131,7 @@ Route table diagnostics
 
 All logs are sent to Log Analytics Workspace for centralized monitoring and analysis.
 
-# Learning Objectives
+### Learning Objectives
 
 This project demonstrates practical experience with:
 
@@ -125,7 +145,7 @@ Centralized network security
 
 Cloud monitoring and diagnostics
 
-# Author
+### Author
 
 Abubakar Alnour
 
