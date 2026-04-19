@@ -1,16 +1,14 @@
-# Azure Hub-and-Spoke Architecture (Bicep)
 
-This project demonstrates the deployment of a secure Hub-and-Spoke network architecture in Microsoft Azure using Infrastructure as Code with Bicep.
-
-The entire environment is deployed programmatically without using the Azure Portal GUI, providing a repeatable and automated infrastructure deployment model on Microsoft Azure.
-
-Architecture Overview
+# Architecture Overview
 
 The solution follows the Hub-and-Spoke network model, commonly used in enterprise cloud environments.
 
 Hub resources centralize security, monitoring, and connectivity while spoke networks host application workloads.
 
-Hub VNet
+## 📊 Architecture Diagram
+![ERP Azure Architecture](https://github.com/jkaljokey-hub/Hub-Spoke-Iac/blob/main/assert/bicep.jpeg?raw=true)
+
+### Hub VNet
 
 Azure Firewall for centralized traffic inspection
 
